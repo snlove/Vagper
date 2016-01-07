@@ -19,6 +19,7 @@ public class HabitFragmnet extends  BaseFragment {
 
 
    private ImageView first;
+    private  boolean start = false;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.habit_layout, null);
@@ -30,19 +31,21 @@ public class HabitFragmnet extends  BaseFragment {
 
     @Override
     public void startAnimaton() {
-        ValueAnimator firetAnim = ObjectAnimator.ofFloat(first,"scale",0.0f,1.0f);
-        firetAnim.setDuration(1000);
-        first.setPivotX(first.getWidth());
-        first.setPivotY(first.getHeight());
+        start = true;
+        ValueAnimator firstXAnim = ObjectAnimator.ofFloat(first,"scaleX",0.0f,1.0f);
+        ValueAnimator firstYAnim = ObjectAnimator.ofFloat(first,"scaleY",0.0f,1.0f);
+        first.setPivotX(first.getWidth()/2);
+        first.setPivotY(first.getHeight()/2);
         first.invalidate();
-        firetAnim.setInterpolator(new CycleInterpolator(2));
         AnimatorSet set = new AnimatorSet();
-        set.play(firetAnim);
+        set.setDuration(500);
+        set.play(firstXAnim).with(firstYAnim);
         set.start();
     }
 
     @Override
     public void stopAnimation() {
-
+       start = false;
+        first.clearAnimation();
     }
 }

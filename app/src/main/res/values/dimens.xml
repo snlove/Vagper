@@ -5,7 +5,7 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="intro_bar">30dp</dimen>
     <dimen name="main_top">75dp</dimen>
-    <dimen name="intro_text_top">120dp</dimen>
+    <dimen name="intro_text_top">150dp</dimen>
     <dimen name="chrac_top_left_icon">63dp</dimen>
     <dimen name="chrac_top_right_icon">80dp</dimen>
     <dimen name="charc_bottom_left_icon">55dp</dimen>

@@ -91,6 +91,10 @@ public class MainActivity extends FragmentActivity {
         @Override
         public void onPageSelected(int position) {
                   setSelectItem(position);
+            BaseFragment currentFragment = fragmentList.get(position);
+            fragmentList.get(currentIndex).stopAnimation();
+            currentFragment.startAnimaton();
+            currentIndex = position;
         }
 
         @Override
