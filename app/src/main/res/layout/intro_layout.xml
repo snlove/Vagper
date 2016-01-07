@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/intro_star"
+       android:src="@mipmap/icon_popular"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="@dimen/intro_bar"
+       />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/intro_main"
+          android:layout_centerHorizontal="true"
+          android:src="@mipmap/icon_receive_apicture"
+          android:layout_marginTop="@dimen/main_top"
+          />
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/intro_finger"
+          android:src="@mipmap/icon_finger"
+          android:layout_centerHorizontal="true"
+          android:paddingRight="17dp"
+          android:layout_marginTop="@dimen/main_top"
+           />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/intro_gold"
+          android:src="@mipmap/icon_gold"
+          android:layout_below="@id/intro_finger"
+          android:layout_centerHorizontal="true"
+          />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/intro_reward"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_reward"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/main_top"
+            />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/intro_firsttext"
+       android:text="@string/intro_text"
+       android:layout_below="@id/intro_main"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="@dimen/intro_text_top"
+       android:textColor="@color/text_color"
+       android:textSize="30dp"
+       />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/intro_text"
+       android:layout_below="@id/intro_firsttext"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="10dp"
+       android:textColor="@color/text_color"
+       android:textSize="30dp"
+       />
+</RelativeLayout>

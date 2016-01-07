@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/charc_main"
+     android:src="@mipmap/icon_private_message_launcher"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="@dimen/main_top"
+     />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charc_video"
+        android:src="@mipmap/icon_private_message_like_video"
+        android:layout_marginTop="@dimen/chrac_top_left_icon"
+        android:layout_marginLeft="@dimen/chrac_left_magin"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chrac_right_icon"
+        android:src="@mipmap/icon_private_message_think_reward"
+        android:layout_below="@+id/charc_video"
+        android:layout_alignEnd="@+id/charc_main" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charc_bottom_left"
+        android:src="@mipmap/icon_private_message_watch_movie"
+        android:layout_below="@+id/chrac_right_icon"
+        android:layout_marginStart="@dimen/charc_bottom_left_icon"
+       />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/charc_bottom_right"
+        android:src="@mipmap/icon_private_message_this_week"
+        android:paddingEnd="5dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/charc_bottom_left"
+        android:layout_alignRight="@id/charc_main"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chrac_firsttext"
+        android:text="@string/intro_text"
+        android:layout_below="@id/charc_main"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/intro_text_top"
+        android:textColor="@color/text_color"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_text"
+        android:layout_below="@id/chrac_firsttext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_color"
+        android:textSize="30dp"
+        />
+</RelativeLayout>
